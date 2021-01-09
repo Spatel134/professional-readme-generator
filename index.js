@@ -38,7 +38,7 @@ const questions = [
   {
     type: "list",
     message: "Choose license:",
-    choices: ["MIT", "The Unlicense", "No License"],
+    choices: ["MIT", "No License"],
     name: "licenseSelection",
   },
   {
@@ -58,11 +58,23 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Function to write README file
+function writeToFile(fileName, data) {
+  fs.writeFile(fileName, data, (err) => {
+    if (err) throw err;
+    console.log(`The file has been saved as: ${filename}`);
+  });
+}
 
-// TODO: Create a function to initialize app
-function init() {}
+// Initialize app
+function init() {
+  console.log("Generator a Professional README | Please follow the prompts to create your README.md file:");
+  inquirer.prompt(questions).then((response) => {
+    const dynamicString = generateMarkdown(response);
+    writeFile("Generated-README.md", dynamicString);
+    console.log("Successfully generated README.md file.");
+  });
+}
 
 // Function call to initialize app
 init();
