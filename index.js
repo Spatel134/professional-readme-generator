@@ -62,20 +62,21 @@ const questions = [
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     if (err) throw err;
-    console.log(`The file has been saved as: ${filename}`);
+    console.log(`The file has been saved as: ${fileName}`);
   });
 }
 
 // Initialize app
 function init() {
-  console.log("Generator a Professional README | Please follow the prompts to create your README.md file:");
+  console.log(
+    "Generator a Professional README | Please follow the prompts to create your README.md file:"
+  );
   inquirer.prompt(questions).then((response) => {
     const dynamicString = generateMarkdown(response);
-    writeFile("Generated-README.md", dynamicString);
+    writeToFile("Generated-README.md", dynamicString);
     console.log("Successfully generated README.md file.");
   });
 }
 
 // Function call to initialize app
 init();
-
