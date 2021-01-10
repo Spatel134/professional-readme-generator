@@ -3,6 +3,13 @@
   This app will help you generate a Professional README.
 
   ---
+## DEMO:
+![README-gif](./assets/Walk-through-video-README.gif)
+
+### Watch video with sounds: 
+* https://drive.google.com/file/d/1NRkCed6E6rNRa1SUdbRQPzb5jfwGI0Xq/view
+
+---
   ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
