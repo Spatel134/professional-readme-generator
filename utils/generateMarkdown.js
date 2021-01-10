@@ -83,7 +83,7 @@ ${data.testing}
 ## Questions
 If you have any questions about this app, email me or visit me on GitHub.
 
-[Email](mailto://${data.userEmail})
+[Email](mailto:${data.userEmail})
 
 [GitHub](http://github.com/${data.userName})
 `;

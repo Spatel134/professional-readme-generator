@@ -69,7 +69,7 @@ function writeToFile(fileName, data) {
 // Initialize app
 function init() {
   console.log(
-    "Generator a Professional README | Please follow the prompts to create your README.md file:"
+    "Generating a Professional README | Please follow the prompts to create your README.md file:"
   );
   inquirer.prompt(questions).then((response) => {
     const dynamicString = generateMarkdown(response);
