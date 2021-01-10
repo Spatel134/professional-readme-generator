@@ -1,4 +1,4 @@
-# professional-readme-generator
+# Professional-Readme-Generator
   ## Description
   This app will help you generate a Professional README.
 
