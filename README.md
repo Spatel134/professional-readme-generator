@@ -6,7 +6,7 @@
 ## DEMO:
 ![README-gif](./assets/Walk-through-video-README.gif)
 
-### Watch video with sounds: 
+### Watch video with sound: 
 * https://drive.google.com/file/d/1NRkCed6E6rNRa1SUdbRQPzb5jfwGI0Xq/view
 
 ---
